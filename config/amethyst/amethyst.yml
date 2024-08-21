@@ -1,0 +1,97 @@
+# Layouts
+layouts:
+  - 3column-left
+  - two-pane
+  - fullscreen
+enables-layout-hud: true
+enables-layout-hud-on-space-change: true
+restore-layouts-on-launch: true
+
+# Margins
+window-margins: true
+window-margin-size: 8
+smart-window-margins: true
+
+# Which windows should float
+float-small-windows: true
+floating-is-blacklist: true
+floating:
+  # Apple Stuff
+  - "com.apple.calculator"
+  - "com.apple.iCal"
+  - "com.apple.mail"
+  - "com.apple.systempreferences"
+  - "com.apple.finder"
+  - "com.apple.Image_Capture"
+  - "com.apple.launchpad.launcher"
+  - "com.apple.exposelauncher"
+  - "com.apple.AppStore"
+  # Popup windows
+  - "com.runningwithcrayons.Alfred"
+  - "com.bitgapp.eqmac"
+  - "com.contextsformac.Contexts"
+  # Usually temporary windows just to overlay
+  - "com.kapeli.dashdoc"
+  - "com.spotify.client"
+  - "com.docker.docker"
+  - "org.pqrs.Karabiner-Elements.Preferences"
+  - "org.pqrs.Karabiner-EventViewer"
+  - "com.postgresapp.Postgres2"
+  - "com.zsa.wally"
+  - "org.videolan.vlc"
+  - "org.inkscape.Inkscape"
+  - "com.tweaking4all.ApplePiBaker"
+  - "io.ganeshrvel.openmtp"
+
+# Shortcuts
+mod1: ["option", "shift"]
+mod2: ["option", "shift", "control"]
+cycle-layout: {mod: "mod1", key: "enter"}
+shrink-main: {mod: "mod1", key: "h"}
+expand-layout: {mod: "mod1", key: "l"}
+increase-main: {mod: "mod1", key: ","}
+decrease-main: {mod: "mod1", key: "."}
+focus-ccw: {mod: "mod1", key: "j"}
+focus-cw: {mod: "mod1", key: "k"}
+focus-main: {mod: "mod1", key: "m"}
+swap-ccw: {mod: "mod1", key: "u"}
+swap-cw: {mod: "mod1", key: "i"}
+swap-main: {mod: "mod1", key: "o"}
+throw-space-left: {mod: "mod2", key: "left"}
+throw-space-right: {mod: "mod2", key: "right"}
+# Disabled Shortcuts
+cycle-layout-backward: {}
+focus-screen-ccw: {}
+focus-screen-cw: {}
+swap-screen-ccw: {}
+swap-screen-cw: {}
+focus-screen-1: {}
+focus-screen-2: {}
+focus-screen-3: {}
+focus-screen-4: {}
+throw-screen-1: {}
+throw-screen-2: {}
+throw-screen-3: {}
+throw-screen-4: {}
+throw-space-1: {}
+throw-space-2: {}
+throw-space-3: {}
+throw-space-4: {}
+throw-space-5: {}
+throw-space-6: {}
+throw-space-7: {}
+throw-space-8: {}
+throw-space-9: {}
+throw-space-10: {}
+throw-space-11: {}
+throw-space-12: {}
+toggle-float: {}
+display-current-layout: {}
+toggle-tiling: {}
+reevaluate-windows: {}
+toggle-focus-follows-mouse: {}
+relaunch-amethyst: {}
+select-tall-layout: {}
+select-wide-layout: {}
+select-fullscreen-layout: {}
+select-column-layout: {}

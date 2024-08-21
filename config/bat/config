@@ -1,0 +1,9 @@
+--theme="Visual Studio Dark+"
+--style="numbers,changes"
+
+# Enable italic text output
+--italic-text=always
+
+# Syntax mappings: map a certain filename pattern to a language.
+#   Example 1: use the C++ syntax for Arduino .ino files
+#--map-syntax "*.ino:C++"
