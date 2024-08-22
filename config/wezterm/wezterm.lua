@@ -77,7 +77,9 @@ local local_config = load_local_config("local")
 ---------------------------------------------------------------
 local config = {
 
-	font = wezterm.font("MesloLGS Nerd Font Mono"),
+	font = wezterm.font({
+        family = "Maple Mono",
+        }),
 	font_size = 17,
 	cell_width = 1.1,
 	line_height = 1.1,

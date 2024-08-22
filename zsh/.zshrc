@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 source_if_exists () {
     if test -r "$1"; then
         source "$1"
@@ -8,8 +15,7 @@ source_if_exists () {
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="gitster"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Change the command execution timestamp shown in the history command output.
 HIST_STAMPS="dd.mm.yyyy"
@@ -68,3 +74,8 @@ export GOPROXY="https://proxy.golang.org,direct"
 
 export PATH="$PATH:/usr/local/sbin:$DOTFILES_DIR/bin:$HOME/.local/bin:$DOTFILES_DIR/scripts/"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~$HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
