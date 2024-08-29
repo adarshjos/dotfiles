@@ -62,17 +62,17 @@ precmd() {
     source $HOME/.zsh_setup.d/paypal_aliases.zsh
 }
 export PATH="$HOME/bin:$PATH"
-export PATH="/usr/local/go/bin:$PATH"
+
+
 
 # GO EXPORTS ----------------------
-export GOPATH=/usr/local/go/bin
 export GODEBUG=x509sha1=1
 export GOSUMDB="off"
 export GO111MODULE="on"
 export GOPROXY="https://proxy.golang.org,direct"
+export PATH=$(go env GOPATH)/bin:$PATH
 
 
-export PATH="$PATH:/usr/local/sbin:$DOTFILES_DIR/bin:$HOME/.local/bin:$DOTFILES_DIR/scripts/"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~$HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
