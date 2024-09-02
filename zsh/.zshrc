@@ -69,7 +69,7 @@ export PATH="$HOME/bin:$PATH"
 export GODEBUG=x509sha1=1
 export GOSUMDB="off"
 export GO111MODULE="on"
-export GOPROXY="https://proxy.golang.org,direct"
+export GOPROXY="https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/go,direct"
 export PATH=$(go env GOPATH)/bin:$PATH
 
 
@@ -79,3 +79,7 @@ export PATH=$(go env GOPATH)/bin:$PATH
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/adjoseph/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

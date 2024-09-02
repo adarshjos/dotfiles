@@ -9,10 +9,20 @@
 {
   "theme": "Andromeda",
   "base_keymap": "SublimeText",
+  "formatter": "language_server",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
+  "centered_layout": {
+    "left_padding": 0.2,
+    "right_padding": 0.2
+  },
   "ui_font_size": 16,
-  "buffer_font_size": 16
+  "buffer_font_size": 16,
+  "languages": {
+    "JSON": {
+      "tab_size": 4
+    }
+  }
 }
